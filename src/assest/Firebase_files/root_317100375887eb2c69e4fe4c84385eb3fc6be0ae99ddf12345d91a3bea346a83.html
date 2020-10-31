@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)https://firebase-dot-devsite-v2-prod.appspot.com/root_317100375887eb2c69e4fe4c84385eb3fc6be0ae99ddf12345d91a3bea346a83.frame -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <title>Firebase</title>
+    <meta name="robots" content="noindex">
+    
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="iframe" content="framebox">
+    
+      <meta name="enable_widgets" content="true">
+    
+    
+      <link rel="stylesheet" href="./css">
+      <link rel="stylesheet" href="./app.css">
+    
+    <script async="" src="./app_loader.js.download"></script><script nonce="brr81ZLs1MyYctBlRLRtpt3ZjU4Uzm">
+      (function(){
+        window.framebox=window.framebox||function(){(window.framebox.q=window.framebox.q||[]).push(arguments)};
+        
+        var a={},b=function(){(window.framebox.dq=window.framebox.dq||[]).push(arguments)};
+        ['getUrl','handleLinkClicksInParent','initAutoSize','navigate','pushState','replaceState',
+         'requestQueryAndFragment','sendEvent','updateSize'].forEach(function(x){a[x]=function(){
+          b(x,arguments)}});
+        window.devsite={framebox:{AutoSizeClient:a}};
+      })();
+      
+      (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+        t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+        E.parentNode.insertBefore(t,E);})(window, document, 'script',
+        'https://www.gstatic.com/devrel-devsite/prod/v93e2da2bf7d84c0a1f193cca06cec1fd148c1709a5f276332c107c5d9c091587/firebase/js/app_loader.js', '[4,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v93e2da2bf7d84c0a1f193cca06cec1fd148c1709a5f276332c107c5d9c091587","https://www.gstatic.com/devrel-devsite/prod/v93e2da2bf7d84c0a1f193cca06cec1fd148c1709a5f276332c107c5d9c091587/firebase","https://firebase-dot-devsite-v2-prod.appspot.com",1,1,null,1]')
+      
+      </script>
+    
+  <script src="./webcomponents-lite.js.download" nonce="brr81ZLs1MyYctBlRLRtpt3ZjU4Uzm"></script><script src="./devsite_app_module.js.download" nonce="brr81ZLs1MyYctBlRLRtpt3ZjU4Uzm"></script><script src="./devsite_devsite_code_module.js.download" nonce="brr81ZLs1MyYctBlRLRtpt3ZjU4Uzm"></script></head>
+  
+  <body style="height: auto; overflow: hidden; padding: 20px;">
+    <meta name="auto_height" content="true"><meta name="auto_width" content="true"><meta name="enable_widgets" content="true">
+  <div class="firesite-code-picker code-picker">
+
+
+  <link rel="stylesheet" href="./code-picker.css">
+
+
+<div class="code-picker__sample-menu--mobile-wrapper">
+  <select id="firesite-samples-select" class="code-picker__sample-menu--mobile">
+    <option selected="">Authenticate a new user</option>
+    <option>Read / write in realtime</option>
+    <option>Subscribe a user to a notification topic</option>
+    <option>Log a custom Analytics event</option>
+    <option>Save an image to Cloud Storage</option>
+  </select>
+</div>
+<div class="code-picker__wrapper">
+  <div class="code-picker__sample-menu">
+    <ul id="firesite-samples-list" class="code-picker__sample-menu--desktop">
+      <li data-index="0" class="code-picker__samples-option selected gc-analytics-event" data-category="documentation" data-action="changeSample" data-label="authenticate-a-new-user">
+        <span class="code-picker__samples-option__title">Authenticate a new user</span>
+      </li>
+      <li data-index="1" class="code-picker__samples-option  gc-analytics-event" data-category="documentation" data-action="changeSample" data-label="read-write-in-realtime">
+        <span class="code-picker__samples-option__title">Read / write in realtime</span>
+      </li>
+      <li data-index="2" class="code-picker__samples-option  gc-analytics-event" data-category="documentation" data-action="changeSample" data-label="subscribe-a-user-to-a-notification-topic">
+        <span class="code-picker__samples-option__title">Subscribe a user to a notification topic</span>
+      </li>
+      <li data-index="3" class="code-picker__samples-option  gc-analytics-event" data-category="documentation" data-action="changeSample" data-label="log-a-custom-analytics-event">
+        <span class="code-picker__samples-option__title">Log a custom Analytics event</span>
+      </li>
+      <li data-index="4" class="code-picker__samples-option  gc-analytics-event" data-category="documentation" data-action="changeSample" data-label="save-an-image-to-cloud-storage">
+        <span class="code-picker__samples-option__title">Save an image to Cloud Storage</span>
+      </li>
+    </ul>
+  </div>
+  <div class="code-picker__samples">
+    <div data-index="0" class="code-picker__sample active">
+      <div class="code-picker__language-tabs" role="tablist" aria-label="languages">
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="true" aria-controls="0-swift-panel" id="0-swift-tab">
+            Swift
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="0-objective-c-panel" id="0-objective-c-tab">
+            Objective-C
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="0-java-panel" id="0-java-tab">
+            Java
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="0-javascript-panel" id="0-javascript-tab">
+            JavaScript
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="0-cplusplus-panel" id="0-cplusplus-tab">
+            C++
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="0-unity-panel" id="0-unity-tab">
+            Unity
+          </button>
+      </div>
+      <section class="code-picker__sample__code" aria-labelledby="0-swift-tab" id="0-swift-panel" tabindex="0" role="tabpanel">
+        <devsite-code><pre is-upgraded="">Auth.auth().addStateDidChangeListener { (auth, user) in
+  if let user = user {
+    let email = user.email
+    // ...
+  }
+}
+Auth.auth().signIn(withEmail: userEmail, password: password) { (user, error) in
+  if let user = user {
+    // ...
+  }
+}
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="0-objective-c-tab" id="0-objective-c-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">[[FIRAuth auth] addAuthStateDidChangeListener:^(FIRAuth * _Nonnull auth,
+                                                FIRUser * _Nullable user) {
+  if (user) {
+    NSString *email = user.email;
+    // ...
+  }
+}];
+[[FIRAuth auth] signInWithEmail:email
+                        password:password
+                      completion:^(FIRUser * _Nullable user,
+                                  NSError * _Nullable error) {
+  if (error) {
+    // ...
+  }
+}];
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="0-java-tab" id="0-java-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">FirebaseAuth auth = FirebaseAuth.getInstance();
+auth.signInWithEmailAndPassword(email, password)
+    .addOnCompleteListener(new OnCompleteListener() {
+        @Override
+        public void onComplete(Task task) {
+            if (task.isSuccessful()) {
+                FirebaseUser user = task.getResult().getUser();
+                String email = user.getEmail();
+                // ...
+            }
+        }
+    });
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="0-javascript-tab" id="0-javascript-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        // User is signed in
+        var email = user.email;
+        // ...
+    } else {
+        // User is not signed in
+        // ...
+    }
+});
+firebase.auth().signInWithEmailAndPassword(email, password);
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="0-cplusplus-tab" id="0-cplusplus-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">firebase::auth::Auth* auth = firebase::auth::Auth::GetAuth(app);
+firebase::Future result =
+    auth-&gt;SignInWithEmailAndPasswordLastResult();
+
+// ...
+if (result.Status() == firebase::kFutureStatusComplete) {
+  if (result.Error() == firebase::auth::kAuthErrorNone) {
+    firebase::auth::User* user = *result.Result();
+    printf("Sign in succeeded for email %s\n", user-&gt;Email().c_str());
+    // ...
+  }
+}
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="0-unity-tab" id="0-unity-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task =&gt; {
+  if (!(Task.IsCancelled || Task.IsFaulted)) {
+    Firebase.Auth.FirebaseUser newUser = task.Result;
+    Debug.LogFormat("User signed in successfully: {0} ({1})",
+        newUser.DisplayName, newUser.UserId);
+  }
+});
+</pre></devsite-code>
+      </section>
+    </div>
+    <div data-index="1" class="code-picker__sample ">
+      <div class="code-picker__language-tabs" role="tablist" aria-label="languages">
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="1-swift-panel" id="1-swift-tab">
+            Swift
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="1-objective-c-panel" id="1-objective-c-tab">
+            Objective-C
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="1-java-panel" id="1-java-tab">
+            Java
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="1-javascript-panel" id="1-javascript-tab">
+            JavaScript
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="1-cplusplus-panel" id="1-cplusplus-tab">
+            C++
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="1-unity-panel" id="1-unity-tab">
+            Unity
+          </button>
+      </div>
+      <section class="code-picker__sample__code" aria-labelledby="1-swift-tab" id="1-swift-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">let ref = Database.database().reference()
+// Write
+ref.child("users/(userId)").setValue(user)
+// Read / listen
+ref.child("users").observe(.value) { snapshot in
+  let dict = snapshot.value as? [String : AnyObject] ?? [:]
+  // ...
+}
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="1-objective-c-tab" id="1-objective-c-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">FIRDatabaseReference *ref = [[FIRDatabase database] reference];
+// write
+[[[ref child:@"users"] child:userId] setValue:user];
+
+// read / listen
+[[ref child:@"users"] observeEventType:FIRDataEventTypeValue
+                              withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+                                  NSDictionary *dict = snapshot.value;
+                                  // ...
+                              }];
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="1-java-tab" id="1-java-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">FirebaseDatabase database = FirebaseDatabase.getInstance()
+// write
+database.child("users").child("userId").setValue(user);
+
+// read / listen
+database.child("users").addValueEventListener(new ValueEventListener() {
+    @Override
+    public void onDataChange(DataSnapshot dataSnapshot) {
+        // ...
+    }
+
+    @Override
+    public void onCancelled(DatabaseError databaseError) {}
+});
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="1-javascript-tab" id="1-javascript-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">var database = firebase.database();
+// write
+database.ref('users/' + userId).set(user);
+
+// read / listen
+database.child("users").on('value', function(snapshot) {
+  // ...
+});
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="1-cplusplus-tab" id="1-cplusplus-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">firebase::database::Database* db = firebase::Database::GetInstance(app);
+// write
+db.GetReference("users").Child("userId").SetValue(user);
+
+// read / listen
+firebase::database::ValueListener* listener = new MyDatabaseValueListener();  // inherits from ValueListener
+db.GetReference("users").AddValueListener(listener);
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="1-unity-tab" id="1-unity-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Firebase.Database.DatabaseReference database = FirebaseDatabase.DefaultInstance.RootReference;
+// write
+database.Child("users").Child(userId).Child("username").SetValueAsync(name);
+
+// read / listen
+database.GetReference("users").ValueChanged += HandleValueChanged;
+
+void HandleValueChanged(object sender, ValueChangedEventArgs args) {
+  if (args.DatabaseError == null) {
+    // Do something with the data in args.Snapshot...
+  }
+}
+</pre></devsite-code>
+      </section>
+    </div>
+    <div data-index="2" class="code-picker__sample ">
+      <div class="code-picker__language-tabs" role="tablist" aria-label="languages">
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="2-swift-panel" id="2-swift-tab">
+            Swift
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="2-objective-c-panel" id="2-objective-c-tab">
+            Objective-C
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="2-java-panel" id="2-java-tab">
+            Java
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="2-cplusplus-panel" id="2-cplusplus-tab">
+            C++
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="2-unity-panel" id="2-unity-tab">
+            Unity
+          </button>
+      </div>
+      <section class="code-picker__sample__code" aria-labelledby="2-swift-tab" id="2-swift-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Messaging.messaging().subscribe(toTopic: "/topics/news")
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="2-objective-c-tab" id="2-objective-c-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">[[FIRMessaging messaging] subscribeToTopic:@"/topics/news"];
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="2-java-tab" id="2-java-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">FirebaseMessaging.getInstance().subscribeToTopic("news");
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="2-cplusplus-tab" id="2-cplusplus-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">firebase::messaging::Subscribe("news");
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="2-unity-tab" id="2-unity-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Firebase.Messaging.FirebaseMessaging.Subscribe("news");
+</pre></devsite-code>
+      </section>
+    </div>
+    <div data-index="3" class="code-picker__sample ">
+      <div class="code-picker__language-tabs" role="tablist" aria-label="languages">
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="3-swift-panel" id="3-swift-tab">
+            Swift
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="3-objective-c-panel" id="3-objective-c-tab">
+            Objective-C
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="3-java-panel" id="3-java-tab">
+            Java
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="3-cplusplus-panel" id="3-cplusplus-tab">
+            C++
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="3-unity-panel" id="3-unity-tab">
+            Unity
+          </button>
+      </div>
+      <section class="code-picker__sample__code" aria-labelledby="3-swift-tab" id="3-swift-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Analytics.logEvent("share_image", parameters: ["id" : "image123"])
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="3-objective-c-tab" id="3-objective-c-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">[FIRAnalytics logEventWithName:@"share_image"
+                    parameters:@{@"id": "image123"}];
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="3-java-tab" id="3-java-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Bundle params = new Bundle();
+params.putString("id", "image123");
+
+FirebaseAnalytics.getInstance(this).logEvent("share_image", params);
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="3-cplusplus-tab" id="3-cplusplus-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">const firebase::analytics::Parameter kParams[] = { firebase::analytics::Parameter("id", "image123") };
+firebase::analytics::LogEvent("share_image", kParams, sizeof(kParams) / sizeof(kParams[0]));
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="3-unity-tab" id="3-unity-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Firebase.Analytics.FirebaseAnalytics.LogEvent("share_image", "id", "image123");
+</pre></devsite-code>
+      </section>
+    </div>
+    <div data-index="4" class="code-picker__sample ">
+      <div class="code-picker__language-tabs" role="tablist" aria-label="languages">
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="4-swift-panel" id="4-swift-tab">
+            Swift
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="4-objective-c-panel" id="4-objective-c-tab">
+            Objective-C
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="4-java-panel" id="4-java-tab">
+            Java
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="4-javascript-panel" id="4-javascript-tab">
+            JavaScript
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="4-cplusplus-panel" id="4-cplusplus-tab">
+            C++
+          </button>
+          <button class="code-picker__language-tabs__tab" role="tab" aria-selected="false" aria-controls="4-unity-panel" id="4-unity-tab">
+            Unity
+          </button>
+      </div>
+      <section class="code-picker__sample__code" aria-labelledby="4-swift-tab" id="4-swift-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">let storageRef = Storage.storage().reference()
+let riversRef = storageRef.child("image/rivers.jpg")
+let uploadTask = riversRef.putData(data, metadata: nil) { (metadata, error) in
+  guard let metadata = metadata else { return }
+
+  let downloadURL = metadata.downloadURL
+  // ...
+}
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="4-objective-c-tab" id="4-objective-c-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">FIRStorage *storage = [FIRStorage storage];
+
+FIRStorageReference *riversRef = [storageRef child:@"images/rivers.jpg"];
+FIRStorageUploadTask *uploadTask = [riversRef putData:data
+                                              metadata:nil
+                                            completion:^(FIRStorageMetadata *metadata,
+                                                        NSError *error) {
+  if (error != nil) {
+    // ...
+  } else {
+    NSURL *downloadURL = metadata.downloadURL;
+    // ...
+  }
+}];
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="4-java-tab" id="4-java-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">FirebaseStorage storage = FirebaseStorage.getInstance();
+
+storage.child("images/rivers.jpg").putBytes(data)
+    .addOnFailureListener(new OnFailureListener() {
+        @Override
+        public void onFailure(@NonNull Exception exception) {
+            // ...
+        }
+    }).addOnSuccessListener(new OnSuccessListener&lt;UploadTask.TaskSnapshot&gt;() {
+        @Override
+        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+            Uri downloadUrl = taskSnapshot.getDownloadUrl();
+            // ...
+        }
+    });
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="4-javascript-tab" id="4-javascript-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">var storageRef = firebase.storage().ref();
+
+storageRef.child("images/rivers.jpg").put(data).then(function(snapshot) {
+  // ...
+});
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="4-cplusplus-tab" id="4-cplusplus-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">firebase::storage::Storage* storage = firebase::storage::Storage::GetInstance(app);
+firebase::storage::StorageReference ref = storage.GetReference("images/rivers.jpg");
+firebase::Future result = ref.PutBytes(data, data_size, nullptr, nullptr);
+// ...
+if (result.Status() == firebase::kFutureStatusComplete) {
+  if (result.Error() == firebase::storage::kErrorNone) {
+    const char* url = result.Result()-&gt;download_url();
+    // ...
+  }
+}
+</pre></devsite-code>
+      </section>
+      <section class="code-picker__sample__code" aria-labelledby="4-unity-tab" id="4-unity-panel" tabindex="0" role="tabpanel" hidden="hidden">
+        <devsite-code><pre is-upgraded="">Firebase.Storage.StorageReference rivers_ref = storage.Reference().Child("images/rivers.jpg");
+rivers_ref.PutBytesAsync(custom_bytes).ContinueWith(task =&gt; {
+  if (!(Task.IsCancelled || Task.IsFaulted)) {
+    // Metadata contains file metadata such as size, content-type, and download URL.
+    Firebase.Storage.Metadata metadata = task.Result;
+    // ...
+  }
+});
+</pre></devsite-code>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+/**
+ * Code sample picker
+ */
+(function() {
+  /* Classnames */
+  const CLASS_SELECTED = 'selected';
+  const CLASS_OPTION = 'code-picker__samples-option';
+  const CLASS_OPTION_TITLE = 'code-picker__samples-option__title';
+
+  /* Elements */
+  var desktopSampleMenu = document.querySelector(
+    '.code-picker__sample-menu--desktop'
+  );
+  var mobileSampleMenu = document.querySelector(
+    '.code-picker__sample-menu--mobile'
+  );
+  var options = castToArray(document.querySelectorAll('.' + CLASS_OPTION));
+  var codeSamples = castToArray(
+    document.querySelectorAll('.code-picker__sample')
+  );
+  var selectedOption = document.querySelector(
+    '.' + CLASS_OPTION + '.' + CLASS_SELECTED
+  );
+  var selectedIndex = selectedOption.getAttribute('data-index');
+  var kdMenuElements;
+
+  /* language tabs */
+  const tabs = document.querySelectorAll('[role="tab"]');
+  const panels = document.querySelectorAll('[role="tabpanel"]');
+
+  /* key direction reference */
+  const keys = {
+    end: 35,
+    home: 36,
+    left: 37,
+    right: 39,
+  };
+
+  // Add or substract depending on key pressed
+  const direction = {
+    37: -1,
+    38: -1,
+    39: 1,
+    40: 1,
+  };
+
+  /* Init mobile event listeners */
+  mobileSampleMenu.addEventListener('change', function(event) {
+    selectedIndex = mobileSampleMenu.selectedIndex;
+
+    // Update mobile menu
+    options.forEach(function(option, i) {
+      toggleClass(option, CLASS_SELECTED, i === selectedIndex);
+      selectedOption = i === selectedIndex ? option : selectedOption;
+    });
+
+    updateActiveCodeSample();
+  });
+
+  /* Init desktop event listeners */
+  desktopSampleMenu.addEventListener('click', function(event) {
+    var option = event.target;
+    var clickedOnOption =
+      !option.classList.contains(CLASS_OPTION) &&
+      !option.classList.contains(CLASS_OPTION_TITLE);
+
+    if (clickedOnOption) {
+      return;
+    } else if (option.classList.contains(CLASS_OPTION_TITLE)) {
+      option = event.target.parentElement;
+    }
+
+    // Update selected menu item
+    selectedOption.classList.remove(CLASS_SELECTED);
+    option.classList.add(CLASS_SELECTED);
+    selectedOption = option;
+    selectedIndex = parseInt(option.dataset.index);
+
+    // Update code sample
+    updateActiveCodeSample();
+
+    // Update the mobile select
+    if (kdMenuElements === undefined) {
+      kdMenuElements = castToArray(
+        document.querySelectorAll('ul.kd-menulist>li')
+      );
+    }
+    kdMenuElements[selectedIndex] && kdMenuElements[selectedIndex].click();
+  });
+
+  /* Helpers */
+  function castToArray(elements) {
+    return Array.prototype.slice.call(elements);
+  }
+
+  function toggleClass(element, className, toggle) {
+    if (toggle) {
+      element.classList.add(className);
+    } else {
+      element.classList.remove(className);
+    }
+  }
+
+  function updateActiveCodeSample() {
+    codeSamples.forEach(function(block) {
+      const isCurrentBlock = parseInt(block.dataset.index) === selectedIndex;
+      toggleClass(block, 'active', isCurrentBlock);
+
+      if (isCurrentBlock) {
+        const firstTab = block.querySelector('[role="tab"]');
+        activateTab(firstTab);
+      }
+    });
+  }
+
+  /*
+  *  Initializes language tabs & panels
+  */
+  function initLanguageTabs() {
+    tabs.forEach((tab, index) => {
+      tab.index = index;
+      addListeners(tab);
+    });
+
+    function addListeners(tab) {
+      tab.addEventListener('click', e => activateTab(e.target));
+      tab.addEventListener('keydown', keydownListener);
+      tab.addEventListener('keyup', keyupListener);
+
+      // Make the fist one selected by default
+      activateTab(tabs[0]);
+    }
+  }
+
+  /**
+   * Key down on language tabs/buttons
+   * @param {KeyboardEvent} event
+   */
+  function keydownListener(event) {
+    switch (event.keyCode) {
+      case keys.end:
+        event.preventDefault();
+        // Activate last tab
+        activateTab(tabs[tabs.length - 1]);
+        break;
+      case keys.home:
+        event.preventDefault();
+        // Activate first tab
+        activateTab(tabs[0]);
+        break;
+    }
+  }
+
+  /**
+   * Key up on language tabs/buttons
+   * @param {KeyboardEvent} event
+   */
+  function keyupListener(event) {
+    switch (event.keyCode) {
+      case keys.left:
+      case keys.right:
+        switchTab(event.keyCode);
+        break;
+    }
+  }
+
+  /**
+   * Rotates through tabs/buttons
+   * @param {number} keyCode
+   */
+  function switchTab(keyCode) {
+    tabs.forEach(tab => {
+      tab.addEventListener('focus', () => activateTab(tab));
+    });
+
+    if (direction[keyCode]) {
+      const target = event.target;
+      if (target.index !== undefined) {
+        if (tabs[target.index + direction[keyCode]]) {
+          tabs[target.index + direction[keyCode]].focus();
+        } else if (keyCode === keys.left) {
+          tabs[tabs.length - 1].focus();
+        } else if (keyCode === keys.right) {
+          tabs[0].focus();
+        }
+      }
+    }
+  }
+
+  /**
+   * Deactivate all tabs and tab panels
+   */
+  function deactivateTabs() {
+    tabs.forEach(tab => {
+      tab.setAttribute('aria-selected', 'false');
+    });
+    panels.forEach(panel => {
+      panel.setAttribute('hidden', 'hidden');
+    });
+  }
+
+  /**
+   * Activates given tab
+   * @param {HTMLElement} tab
+   */
+  function activateTab(tab) {
+    deactivateTabs();
+    tab.setAttribute('aria-selected', 'true');
+
+    // Show respective tab's panel
+    const id = tab.getAttribute('aria-controls');
+    document.getElementById(id).removeAttribute('hidden');
+  }
+  initLanguageTabs();
+})();</script>
+
+  </div>
+  
+  
+</body></html>

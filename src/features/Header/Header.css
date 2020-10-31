@@ -1,0 +1,31 @@
+.pdproduct {
+  padding-left: 64px;
+  padding-right: 67px;
+}
+.closebut{  
+  font-size: 37px;
+  color: black;
+
+}
+.width-140 {
+  width: 140%;
+}
+.navzindex {
+  z-index: 1;
+}
+@media only screen and (max-width: 992px) {
+  .header nav.navbar-color ul.left {
+    position: relative;
+    top: 0px !important;
+    left: 0px !important;
+  }
+}
+.closebut {
+  font-size: 3rem;
+}
+.borderbottom {
+  border-bottom: 1px solid black;
+}
+.font-size-20 {
+  font-size: 20px;
+}
